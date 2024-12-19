@@ -227,7 +227,29 @@ Bundle complete! 4 Gemfile dependencies, 122 gems now installed.
 Use `bundle info [gemname]` to see where a bundled gem is installed.
 ```
 
-### fastlane ios release_pod 
+### fastlane ios release_pod
+[FastlaneTools/blob/main/lib/fastlane/fastlane.pods.rb](https://github.com/MichaelLedger/FastlaneTools/blob/main/lib/fastlane/fastlane.pods.rb)
+```
+default_platform(:ios)
+xcode_select(ENV["XCODE_SELECT"])
+
+platform :ios do
+
+  //...
+  
+  desc "Release a private pod"
+  desc "Samples 1: fastlane ios release_pod type:major"
+  desc "Samples 2: fastlane ios release_pod version:x.x.x"
+  lane :release_pod do |options|
+    lint
+    bump_tag(options)
+    repo_push
+  end
+
+end
+```
+
+Terminal practice:
 ```
 $ cd scripts
 $ sh release.sh YYModel
