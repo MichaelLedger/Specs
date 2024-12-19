@@ -214,3 +214,5 @@ $ pod install --verbose
 
 ## Step6. Open `XXX.xcworkspace` with Xcode.
 That's all! 🎉🎉🎉🍺🍺🍺
+
+## Tips

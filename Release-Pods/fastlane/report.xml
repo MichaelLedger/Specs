@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="fastlane.lanes">
+    
+    
+    
+      
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.000196">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="1: xcode_select" time="0.000132">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="2: import_from_git" time="4.161742">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="3: default_platform" time="0.000181">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="4: xcode_select" time="0.000128">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="5: import_from_git" time="4.169734">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="6: Switch to ios lint lane" time="9.9e-05">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="7: pod_lib_lint" time="23.233269">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="8: Switch to ios bump_tag lane" time="0.000124">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="9: ensure_git_status_clean" time="0.01831">
+        
+          <failure message="/Users/gavinxiang/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/fastlane-2.226.0/fastlane/lib/fastlane/actions/actions_helper.rb:67:in `execute_action&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/fastlane-2.226.0/fastlane/lib/fastlane/runner.rb:255:in `block in execute_action&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/fastlane-2.226.0/fastlane/lib/fastlane/runner.rb:229:in `chdir&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/fastlane-2.226.0/fastlane/lib/fastlane/runner.rb:229:in `execute_action&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/fastlane-2.226.0/fastlane/lib/fastlane/runner.rb:157:in `trigger_action_by_name&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/fastlane-2.226.0/fastlane/lib/fastlane/fast_file.rb:159:in `method_missing&apos;&#10;../../../../../../var/folders/wk/frkkcch539lc6s2dk6dw9dy80000gn/T/fl_clone20241219-11099-bfin4g/FastlaneTools.git/lib/fastlane/fastlane.pods.rb:76:in `block (2 levels) in parsing_binding&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/fastlane-2.226.0/fastlane/lib/fastlane/lane.rb:41:in `call&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/fastlane-2.226.0/fastlane/lib/fastlane/runner.rb:204:in `try_switch_to_lane&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/fastlane-2.226.0/fastlane/lib/fastlane/runner.rb:146:in `trigger_action_by_name&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/fastlane-2.226.0/fastlane/lib/fastlane/fast_file.rb:159:in `method_missing&apos;&#10;../../../../../../var/folders/wk/frkkcch539lc6s2dk6dw9dy80000gn/T/fl_clone20241219-11099-bfin4g/FastlaneTools.git/lib/fastlane/fastlane.pods.rb:139:in `block (2 levels) in parsing_binding&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/fastlane-2.226.0/fastlane/lib/fastlane/lane.rb:41:in `call&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/fastlane-2.226.0/fastlane/lib/fastlane/runner.rb:49:in `block in execute&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/fastlane-2.226.0/fastlane/lib/fastlane/runner.rb:45:in `chdir&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/fastlane-2.226.0/fastlane/lib/fastlane/runner.rb:45:in `execute&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/fastlane-2.226.0/fastlane/lib/fastlane/lane_manager.rb:46:in `cruise_lane&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/fastlane-2.226.0/fastlane/lib/fastlane/command_line_handler.rb:34:in `handle&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/fastlane-2.226.0/fastlane/lib/fastlane/commands_generator.rb:110:in `block (2 levels) in run&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/commander-4.6.0/lib/commander/command.rb:187:in `call&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/commander-4.6.0/lib/commander/command.rb:157:in `run&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/commander-4.6.0/lib/commander/runner.rb:444:in `run_active_command&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/fastlane-2.226.0/fastlane_core/lib/fastlane_core/ui/fastlane_runner.rb:124:in `run!&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/commander-4.6.0/lib/commander/delegates.rb:18:in `run!&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/fastlane-2.226.0/fastlane/lib/fastlane/commands_generator.rb:363:in `run&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/fastlane-2.226.0/fastlane/lib/fastlane/commands_generator.rb:43:in `start&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/fastlane-2.226.0/fastlane/lib/fastlane/cli_tools_distributor.rb:123:in `take_off&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/fastlane-2.226.0/bin/fastlane:23:in `&lt;top (required)&gt;&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/bin/fastlane:25:in `load&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/bin/fastlane:25:in `&lt;top (required)&gt;&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/bundler-2.5.20/lib/bundler/cli/exec.rb:58:in `load&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/bundler-2.5.20/lib/bundler/cli/exec.rb:58:in `kernel_load&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/bundler-2.5.20/lib/bundler/cli/exec.rb:23:in `run&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/bundler-2.5.20/lib/bundler/cli.rb:455:in `exec&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/bundler-2.5.20/lib/bundler/vendor/thor/lib/thor/command.rb:28:in `run&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/bundler-2.5.20/lib/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/bundler-2.5.20/lib/bundler/vendor/thor/lib/thor.rb:527:in `dispatch&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/bundler-2.5.20/lib/bundler/cli.rb:35:in `dispatch&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/bundler-2.5.20/lib/bundler/vendor/thor/lib/thor/base.rb:584:in `start&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/bundler-2.5.20/lib/bundler/cli.rb:29:in `start&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/bundler-2.5.20/exe/bundle:28:in `block in &lt;top (required)&gt;&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/bundler-2.5.20/lib/bundler/friendly_errors.rb:117:in `with_friendly_errors&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/bundler-2.5.20/exe/bundle:20:in `&lt;top (required)&gt;&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/bin/bundle:25:in `load&apos;&#10;/Users/gavinxiang/.rbenv/versions/3.3.5/bin/bundle:25:in `&lt;main&gt;&apos;&#10;&#10;Git repository is dirty! Please ensure the repo is in a clean state by committing/stashing/discarding all changes first." />
+        
+      </testcase>
+    
+  </testsuite>
+</testsuites>
