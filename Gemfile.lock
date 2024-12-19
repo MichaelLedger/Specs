@@ -1,17 +1,17 @@
 GIT
-  remote: git@github.com:CocoaPods/cocoapods-packager.git
-  revision: f95c6c2322614abb8e3085d7dfa01d4695db3178
-  branch: master
-  specs:
-    cocoapods-packager (1.5.0)
-      cocoapods (>= 1.7.3, < 2.0)
-
-GIT
   remote: git@github.com:MichaelLedger/FastlaneTools.git
   revision: 1c62452245f6b62268481c6d0bd960b848d1135f
   branch: main
   specs:
     fastools (0.1.10)
+
+GIT
+  remote: git@github.com:MichaelLedger/cocoapods-packager.git
+  revision: 4fbf72ef25932ca88c884a7f3387fe64f3462112
+  branch: master
+  specs:
+    cocoapods-packager (2.0.1)
+      cocoapods (>= 1.7.3, < 2.0)
 
 GEM
   remote: https://rubygems.org/

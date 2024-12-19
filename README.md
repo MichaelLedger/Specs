@@ -215,4 +215,150 @@ $ pod install --verbose
 ## Step6. Open `XXX.xcworkspace` with Xcode.
 That's all! 🎉🎉🎉🍺🍺🍺
 
-## Tips
+## Bundle Commands
+### bundle install
+```
+$ bundle install
+Fetching git@github.com:MichaelLedger/cocoapods-packager.git
+Fetching gem metadata from https://rubygems.org/.......
+Resolving dependencies...
+Using cocoapods-packager 2.0.1 (was 1.5.0) from git@github.com:MichaelLedger/cocoapods-packager.git (at master@4fbf72e)
+Bundle complete! 4 Gemfile dependencies, 122 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+```
+
+### pod package
+An alternative to cocoapods-packager, adapted to the latest Xcode.
+CocoaPods plugin which allows you to generate a framework or static library from a podspec.
+```
+$ cd scripts
+$ sh package.sh YYModel.podspec 
+bundle exec pod package YYModel.podspec --force --no-mangle --verbose
+  Preparing
+
+Analyzing dependencies
+
+Fetching external sources
+-> Fetching podspec for `YYModel` from `/Users/gavinxiang/Downloads/Specs/scripts/YYModel.podspec`
+
+Resolving dependencies of 
+  CDN: trunk Relative path: CocoaPods-version.yml exists! Returning local because checking is only performed in repo update
+
+Comparing resolved specification to the sandbox manifest
+  A YYModel
+
+Downloading dependencies
+
+-> Installing YYModel (1.0.6)
+  > Copying YYModel from `/Users/gavinxiang/Library/Caches/CocoaPods/Pods/External/YYModel/ee0f5a9852640421aa1d7cf50052ad4a-69d41` to `Pods/YYModel`
+  - Running pre install hooks
+  - Running pre integrate hooks
+
+Generating Pods project
+  - Creating Pods project
+  - Installing files into Pods project
+    - Adding source files
+    - Adding frameworks
+    - Adding libraries
+    - Adding resources
+    - Linking headers
+  - Installing Pod Targets
+    - Installing target `YYModel` iOS 12.0
+      - Generating dummy source at `Pods/Target Support Files/YYModel/YYModel-dummy.m`
+  - Installing Aggregate Targets
+    - Installing target `Pods-packager` iOS 12.0
+      - Generating dummy source at `Pods/Target Support Files/Pods-packager/Pods-packager-dummy.m`
+  - Stabilizing target UUIDs
+  - Running post install hooks
+  - Writing Xcode project file to `Pods/Pods.xcodeproj`
+  Cleaning up sandbox directory
+
+Skipping User Project Integration
+  - Writing Lockfile in `Podfile.lock`
+  - Writing Manifest in `Pods/Manifest.lock`
+  CDN: trunk Relative path: CocoaPods-version.yml exists! Returning local because checking is only performed in repo update
+
+-> Pod installation complete! There is 1 dependency from the Podfile and 1 total pod installed.
+Building static framework YYModel (1.0.6) with configuration Release
+Including dependencies
+Vendored libraries: []
+current xcode version: 16.2
+Initial architectures: ["x86_64", "arm64", "arm64e"]
+Final architectures: ["x86_64", "arm64", "arm64e"]
+  Preparing
+
+Analyzing dependencies
+
+Fetching external sources
+-> Fetching podspec for `YYModel` from `/Users/gavinxiang/Downloads/Specs/scripts/YYModel.podspec`
+
+Resolving dependencies of 
+  CDN: trunk Relative path: CocoaPods-version.yml exists! Returning local because checking is only performed in repo update
+
+Comparing resolved specification to the sandbox manifest
+  A YYModel
+
+Downloading dependencies
+
+-> Installing YYModel (1.0.6)
+  > Copying YYModel from `/Users/gavinxiang/Library/Caches/CocoaPods/Pods/External/YYModel/ee0f5a9852640421aa1d7cf50052ad4a-69d41` to `Pods/YYModel`
+  - Running pre install hooks
+  - Running pre integrate hooks
+
+Generating Pods project
+  - Creating Pods project
+  - Installing files into Pods project
+    - Adding source files
+    - Adding frameworks
+    - Adding libraries
+    - Adding resources
+    - Linking headers
+  - Installing Pod Targets
+    - Installing target `YYModel` macOS 10.13
+      - Generating dummy source at `Pods/Target Support Files/YYModel/YYModel-dummy.m`
+  - Installing Aggregate Targets
+    - Installing target `Pods-packager` macOS 10.13
+      - Generating dummy source at `Pods/Target Support Files/Pods-packager/Pods-packager-dummy.m`
+  - Stabilizing target UUIDs
+  - Running post install hooks
+  - Writing Xcode project file to `Pods/Pods.xcodeproj`
+  Cleaning up sandbox directory
+
+Skipping User Project Integration
+  - Writing Lockfile in `Podfile.lock`
+  - Writing Manifest in `Pods/Manifest.lock`
+
+-> Pod installation complete! There is 1 dependency from the Podfile and 1 total pod installed.
+Building static framework YYModel (1.0.6) with configuration Release
+Including dependencies
+Vendored libraries: []
+
+$ ls
+Package.swift   YYModel         YYModel-1.0.6   YYModel.podspec fastlane        package.sh      release.sh
+$ cd YYModel-1.0.6 
+$ ls
+LICENSE         YYModel.podspec build           ios             osx
+$ cd ios 
+$ ls
+YYModel.framework
+```
+
+## Other Tips
+*GIT recommend every repository include a `README`, `LICENSE`, and `.gitignore`.*
+### Git - create a new repository on the command line
+```
+echo "# cocoapods-packager" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:MichaelLedger/cocoapods-packager.git
+git push -u origin main
+```
+
+### Git - push an existing repository from the command line
+```
+git remote add origin git@github.com:MichaelLedger/cocoapods-packager.git
+git branch -M main
+git push -u origin main
+```

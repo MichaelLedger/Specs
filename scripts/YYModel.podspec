@@ -12,6 +12,7 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.13'
   # s.watchos.deployment_target = '4.0'
   # s.tvos.deployment_target = '12.0'
+  s.cocoapods_version = '>= 1.11.0'
 
   s.source       = { :git => 'https://github.com/MichaelLedger/YYModel.git', :tag => s.version.to_s }
   
