@@ -227,6 +227,13 @@ Bundle complete! 4 Gemfile dependencies, 122 gems now installed.
 Use `bundle info [gemname]` to see where a bundled gem is installed.
 ```
 
+### fastlane ios release_pod 
+```
+$ cd scripts
+$ sh release.sh YYModel
+bundle exec fastlane ios release_pod --env YYModel
+```
+
 ### pod package
 An alternative to cocoapods-packager, adapted to the latest Xcode.
 CocoaPods plugin which allows you to generate a framework or static library from a podspec.
