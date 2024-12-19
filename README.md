@@ -218,6 +218,21 @@ That's all! 🎉🎉🎉🍺🍺🍺
 ## Bundle Commands
 ### bundle install
 ```
+$ cat Gemfile
+# frozen_string_literal: true
+
+source "https://rubygems.org"
+
+ruby "3.3.5"
+
+git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
+
+gem "cocoapods"
+gem "fastlane"
+gem 'fastools', :git => 'git@github.com:MichaelLedger/FastlaneTools.git', :branch => 'main'
+gem 'cocoapods-packager', :git => 'git@github.com:MichaelLedger/cocoapods-packager.git', :branch => 'master'
+```
+```
 $ bundle install
 Fetching git@github.com:MichaelLedger/cocoapods-packager.git
 Fetching gem metadata from https://rubygems.org/.......
@@ -256,7 +271,7 @@ $ sh release.sh YYModel
 bundle exec fastlane ios release_pod --env YYModel
 ```
 
-### pod package
+### [cocoapods-packager](https://github.com/MichaelLedger/cocoapods-packager)
 An alternative to cocoapods-packager, adapted to the latest Xcode.
 CocoaPods plugin which allows you to generate a framework or static library from a podspec.
 ```
